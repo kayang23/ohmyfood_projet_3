@@ -323,7 +323,7 @@ h3 {
   background-color: #f2f2f2;
   padding: 5px 0 5px 0;
   position: relative;
-  bottom: 50px;
+  bottom: 100px;
 }
 .menu .menu_carte {
   margin-bottom: 5%;
@@ -422,15 +422,17 @@ button {
 
 /*-----------------FOOTER--------------------------------*/
 footer {
-  font-size: 14px;
   background-color: #404040;
   padding: 2px;
   color: white;
+  padding: 20px 0 20px 20px;
 }
 footer h2 {
   width: 100%;
   border-bottom: none;
   font-family: shrikhand, cursive;
+  margin: 0 0 20px 0;
+  font-size: 18px;
 }
 footer .footer_div {
   display: flex;
@@ -443,7 +445,12 @@ footer a {
 footer .footer_paragraphe {
   margin: 0 0 5px 10px;
 }
-footer .footer_icone {
+footer .footer_icone--couvert {
+  font-size: 14px;
+  width: 15px;
+  height: 15px;
+}
+footer .footer_icone--partenaire {
   font-size: 14px;
   width: 15px;
   height: 15px;
