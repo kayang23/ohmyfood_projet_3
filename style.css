@@ -290,10 +290,11 @@ footer_contact {
 .header_class {
   display: flex;
   align-items: center;
-  margin: 0 0 10px 8px;
+  margin: 0 0 5px 8px;
+  padding: 20px 0 0 20px;
 }
 .header_class .header_h1 {
-  margin-left: 280px;
+  margin-left: 25%;
   box-shadow: none;
   padding: 0;
 }
@@ -361,7 +362,7 @@ h3 {
   border-bottom: 4px solid #99e2d0;
   width: 45px;
   font-weight: 300;
-  margin: 45px 0 5px 5px;
+  margin: 45px 0 5px 25px;
 }
 
 .entrees_plats_desserts_titre {
@@ -392,7 +393,7 @@ h3 {
   box-shadow: 5px 5px 5px #b3b3b3;
   height: 80px;
   border-radius: 20px;
-  margin: 15px 15px 20px 15px;
+  margin: 20px;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -470,19 +471,13 @@ footer .footer_div_icone {
     padding: 21px 0 30px 25px;
   }
   .header_class h1 {
-    margin-left: 40px;
+    margin-left: 40%;
   }
 
   .menu_carte {
     margin: 0;
   }
-
-  .menu_class_carte {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .menu_class_carte i {
+  .menu_carte i {
     font-size: 25px;
     margin-left: 50px;
     position: absolute;
@@ -500,7 +495,7 @@ footer .footer_div_icone {
     margin: 25px;
   }
   footer .footer_pied {
-    width: 800px;
+    width: 95%;
     display: flex;
   }
 }
