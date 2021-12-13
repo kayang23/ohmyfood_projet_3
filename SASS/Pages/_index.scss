@@ -1,0 +1,94 @@
+.fonctionnement{
+    margin: 2%;
+    padding-bottom: 10%;
+
+    .fonctionnement_div{
+        display: flex;
+        align-items: center;
+        padding-left: 6%;
+        height: 60px;
+        width: 85%;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        margin: 3% auto;
+        box-shadow: 0 5px 15px #bfbfbf;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .fonctionnement_div:hover{
+        background-color:#f1eafb ;
+    }
+
+    .fonctionnement_paragraphe{
+        width: 30px;
+        height: 30px;
+        border: 2px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        background-color: #9356dc;
+        color: white;
+        position: absolute;
+        left: -15px;
+    }
+
+    .fonctionnement_icone i{
+        font-size: 18px;
+        width: 20px; 
+        height: 20px;
+        color: grey;
+    }
+
+    .fas:hover{
+        color: #9356dc;
+    }
+
+    h3{
+        margin: 6%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    
+    .choix_restaurants_idees{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .choix_restaurants_photo{
+        width: 330px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    #choix_restaurants h2{
+        text-align: center;
+    }
+    
+    .fonctionnement{
+        padding-bottom: 5%;
+        
+        .fonctionnement_fonction{
+            display: flex;
+            width: 100%;
+      
+            .fonctionnement_div{
+                margin: 2%;
+                padding: 0;
+    
+                p{
+                    position: absolute;
+                    left: 45%;
+                    bottom: 50%;
+                }
+            
+                .fonctionnement_icone{
+                    padding: 10% 5% 10% 10%;
+                }
+            }  
+        }
+    }

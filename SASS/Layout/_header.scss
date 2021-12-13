@@ -1,0 +1,86 @@
+header{
+    text-align: center;
+    position: relative;
+    background-color: #f2f2f2;
+    padding-bottom: 5%;
+    
+    
+    h1{
+    
+        font-family: shrikhand, cursive;
+        border-bottom: 2px solid transparent;
+        padding: 5%;
+        box-shadow: 0 2px 5px #bfbfbf;
+        margin: 0;
+        position: relative;
+        top: 2%;
+    }
+
+    .localisation{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e6e6e6;
+
+        .localisation_icone{
+            margin-right: 4%;
+        }
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .reservez_button{
+        padding: 20px;
+        border-radius: 30px;
+        color: white;
+        background-color: #ff79da;
+        background: linear-gradient( to bottom right,#ff79da, #9356dc);
+        border: none;
+        width: 250px;
+        margin: auto;
+    
+
+        &:hover{
+            border: 5px solid #9356dc;
+            transition: 0.1s ease-in-out;
+        }
+    } 
+/*-------------------------------------------------------------------------------------*/ 
+/*                                              pages-1-2-3-4                          */
+/*-------------------------------------------------------------------------------------*/
+
+.header_class{
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 8px;
+    
+        .header_h1{
+            margin-left: 280px;
+            box-shadow: none;
+            padding: 0;
+        }
+    
+        i{
+            color: black;
+            font-size: 20px;
+        }
+    }
+    
+    h1{
+        font-family: shrikhand, cursive;
+        font-size: 28px;
+        margin: 0;
+    }
+    
+    h3{
+        width: 100%;
+    }
+    
+    .header_img_restaurant{
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+}

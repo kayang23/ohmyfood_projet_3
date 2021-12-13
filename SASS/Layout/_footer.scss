@@ -1,0 +1,47 @@
+.footer_pied{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+
+    background-color: #404040;
+    padding: 5%;
+    color: white;
+
+    .footer_titre{
+        font-family: shrikhand, cursive;
+    }
+
+    .footer_div{
+        display: flex;
+        align-items: center;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .footer_paragraphe{
+        margin: 0 0 5px 10px;
+    }
+
+    .footer_icone--couvert{
+        font-size: 14px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer_icone--partenaire{
+        font-size: 16px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer_contact{
+        cursor: pointer;
+    }
+}
+

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "npm": "^8.3.0"
+  },
+  "name": "projet3_ohmyfood_1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,17 @@
+@import:_button;
+
+button {
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    padding: 14px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  button p {
+    font-size: 18px;

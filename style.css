@@ -493,7 +493,7 @@ footer .footer_div_icone {
     display: flex;
   }
   footer h2 {
-    margin-left: 2px;
+    margin: 25px;
   }
   footer .footer_pied {
     width: 800px;
@@ -530,6 +530,7 @@ footer .footer_div_icone {
   footer {
     display: block;
     text-align: center;
+    padding-bottom: 18px;
   }
 
   .footer_pied {
