@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,500;1,700;1,900&family=Shrikhand&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: shrikhand, cursive;
+  font-family: roboto, sans-serif;
+  border: 1px solid #f2f2f2;
+  max-width: 1500px;
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  background-color: #f2f2f2;
+  padding-bottom: 5%;
+}
+header h1 {
+  font-family: shrikhand, cursive;
+  border-bottom: 2px solid transparent;
+  padding: 5%;
+  box-shadow: 0 2px 5px #bfbfbf;
+  margin: 0;
+  position: relative;
+  top: 2%;
+}
+header .localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+  height: 65px;
+}
+header .localisation_icone {
+  margin-right: 4%;
+}
+header .localisation_paragraphe {
+  font-weight: bold;
+}
+header a {
+  text-decoration: none;
+}
+header h2 {
+  margin-top: 10px;
+}
+header p {
+  margin: 10px;
+  font-weight: 300;
+  font-size: 18px;
+}
+header .explorer_paragraphe {
+  margin: 30px;
+}
+header .button_explorer {
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+  background-color: #ff79da;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border: none;
+  width: 250px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 500;
+}
+header .button_explorer:hover {
+  border: 5px solid #9356dc;
+  transition: 0.1s ease-in-out;
+}
+
+/*---------------FONCTIONNEMENT-MOBILE-----------------------------------------------*/
+main {
+  background-color: #f2f2f2;
+}
+
+.fonctionnement {
+  margin: 2%;
+  padding-bottom: 10%;
+}
+.fonctionnement_h2 {
+  margin: 40px 0 25px 10px;
+}
+.fonctionnement_div {
+  display: flex;
+  align-items: center;
+  padding-left: 6%;
+  height: 60px;
+  width: 85%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px #bfbfbf;
+  position: relative;
+  cursor: pointer;
+}
+.fonctionnement .fonctionnement_div:hover {
+  background-color: #f1eafb;
+}
+.fonctionnement .fonctionnement_paragraphe {
+  width: 25px;
+  height: 25px;
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: #9356dc;
+  color: white;
+  position: absolute;
+  left: -15px;
+  font-size: 14px;
+}
+.fonctionnement .fonctionnement_icone i {
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  color: grey;
+}
+.fonctionnement .fas:hover {
+  color: #9356dc;
+}
+.fonctionnement h3 {
+  margin: 6%;
+  font-size: 16px;
+}
+
+/*--------------------------------RESTAURANT-MOBILE-----------------------------------*/
+#choix_restaurants {
+  padding-top: 5%;
+  background-color: #f2f2f2;
+  padding-bottom: 10%;
+}
+@media screen and (min-width: 768px) {
+  #choix_restaurants .choix_restaurants_idees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #choix_restaurants .choix_restaurants_idees .choix_restaurants_photo {
+    width: 470px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #choix_restaurants #choix_restaurants h2 {
+    text-align: center;
+  }
+}
+#choix_restaurants h2 {
+  margin: 0 0 3% 2%;
+}
+#choix_restaurants .choix_restaurants_div {
+  margin: 0;
+}
+#choix_restaurants .choix_restaurants_photo {
+  border-radius: 20px;
+  box-shadow: 0 5px 15px #bfbfbf;
+  background-color: white;
+  margin: 0 10px 25px 10px;
+  position: relative;
+}
+#choix_restaurants a {
+  text-decoration: none;
+  color: inherit;
+}
+#choix_restaurants .choix_restaurants_image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+#choix_restaurants .choix_restaurants_paragraphe {
+  color: #1c635f;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  padding: 4px;
+  background-color: #99e2dd;
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  border-radius: 2px;
+}
+#choix_restaurants .choix_restaurants_texte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  height: 70px;
+}
+#choix_restaurants i {
+  font-size: 25px;
+  position: absolute;
+  right: 18px;
+}
+#choix_restaurants .fas {
+  background-image: linear-gradient(to top right, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+  transition: linear 0.5s ease-in-out;
+}
+#choix_restaurants .fas:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: #404040;
+  padding: 10px 0 10px 20px;
+  color: white;
+  font-size: 16px;
+}
+footer_titre {
+  font-family: shrikhand, cursive;
+  margin: 15px 0 15px 0;
+  font-size: 16px;
+}
+footer_div {
+  display: flex;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer_paragraphe {
+  margin: 0 0 5px 10px;
+}
+footer_icone--couvert {
+  font-size: 14px;
+  width: 15px;
+  height: 15px;
+}
+footer_icone--partenaire {
+  font-size: 16px;
+  width: 15px;
+  height: 15px;
+}
+footer_contact {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    padding-bottom: 5%;
+  }
+  .fonctionnement .fonctionnement_fonction {
+    display: flex;
+    width: 100%;
+  }
+  .fonctionnement .fonctionnement_fonction .fonctionnement_div {
+    margin: 10px;
+    padding: 0;
+  }
+  .fonctionnement .fonctionnement_fonction .fonctionnement_div p {
+    position: absolute;
+    left: 45%;
+    bottom: 85%;
+  }
+  .fonctionnement .fonctionnement_fonction .fonctionnement_div .fonctionnement_icone {
+    padding: 10px 5px 10px 10px;
+  }
+
+  .choix_restaurants_idees {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .choix_restaurants_idees .choix_restaurants_photo {
+    width: 460px;
+  }
+
+  .footer_pied {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+/*--------------------------------------------------------------------------------------*/
+/*                                         pages-1-2-3-4                                        */
+/*--------------------------------------------------------------------------------------*/
+.header_class {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 8px;
+}
+.header_class .header_h1 {
+  margin-left: 280px;
+  box-shadow: none;
+  padding: 0;
+}
+.header_class i {
+  color: black;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: shrikhand, cursive;
+  font-size: 28px;
+  margin: 0;
+}
+
+h3 {
+  width: 100%;
+}
+
+.header_img_restaurant {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu {
+  border-radius: 50px 50px 0 0;
+  background-color: #f2f2f2;
+  padding: 5px 0 5px 0;
+  position: relative;
+  bottom: 50px;
+}
+.menu .menu_carte {
+  margin-bottom: 5%;
+}
+.menu .menu_class_carte {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.menu i {
+  font-size: 25px;
+  margin-left: 50px;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+.menu .fas {
+  background-image: linear-gradient(to top right, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+.menu .fas:hover {
+  color: opacity 1;
+}
+
+/*-----------------------------MENUS--------------------------------*/
+.entrees_plats_desserts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.entrees_plats_desserts h2 {
+  font-size: 20px;
+  border-bottom: 4px solid #99e2d0;
+  width: 45px;
+  font-weight: 300;
+  margin: 45px 0 5px 5px;
+}
+
+.entrees_plats_desserts_titre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.entrees_plats_desserts_titre .entrees_plats_desserts_paragraphe {
+  margin: 3px 0 5px 5px;
+  width: 100%;
+  font-weight: 300;
+}
+
+.entrees_plats_desserts_prix {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.entrees_plats_desserts_carte {
+  width: 100%;
+}
+.entrees_plats_desserts_carte .entrees_plats_desserts_div_carte {
+  box-shadow: 5px 5px 5px #b3b3b3;
+  height: 80px;
+  width: 90%;
+  border-radius: 20px;
+  margin: 5px 3px 20px 3px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 10px;
+}
+.entrees_plats_desserts_carte .entrees_plats_desserts_div_carte .entrees_plats_desserts_prix {
+  font-weight: 600;
+}
+
+button {
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  border: none;
+  width: 200px;
+  height: 50px;
+  font-size: 18px;
+  padding: 14px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/*-----------------FOOTER--------------------------------*/
+footer {
+  font-size: 14px;
+  background-color: #404040;
+  padding: 2px;
+  color: white;
+}
+footer h2 {
+  width: 100%;
+  border-bottom: none;
+  font-family: shrikhand, cursive;
+}
+footer .footer_div {
+  display: flex;
+  align-items: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer_paragraphe {
+  margin: 0 0 5px 10px;
+}
+footer .footer_icone {
+  font-size: 14px;
+  width: 15px;
+  height: 15px;
+}
+footer .footer_paragraphe--contact {
+  cursor: pointer;
+}
+footer .footer_div_icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .header_class {
+    display: flex;
+    align-items: center;
+    padding: 21px 0 30px 25px;
+  }
+  .header_class h1 {
+    margin-left: 40px;
+  }
+
+  .menu_carte {
+    margin: 0;
+  }
+
+  .menu_class_carte {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menu_class_carte i {
+    font-size: 25px;
+    margin-left: 50px;
+    position: absolute;
+    right: 80px;
+  }
+
+  .entrees_plats_desserts_carte {
+    width: 80%;
+  }
+
+  footer {
+    display: flex;
+  }
+  footer h2 {
+    margin-left: 2px;
+  }
+  footer .footer_pied {
+    width: 800px;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .entrees_plats_desserts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .entrees_plats_desserts_carte {
+    margin: 0 2px 0 2px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .entrees_plats_desserts_titre {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .entrees_plats_desserts_h3 {
+    margin: 2px 0 0 0;
+  }
+
+  footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer_pied {
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding-top: 4px;
+  }
+  .footer_pied h2 {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
