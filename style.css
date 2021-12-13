@@ -129,7 +129,7 @@ header .button_explorer:hover {
 
 /*--------------------------------RESTAURANT-MOBILE-----------------------------------*/
 #choix_restaurants {
-  padding-top: 5%;
+  padding-top: 60px;
   background-color: #f2f2f2;
   padding-bottom: 10%;
 }
@@ -149,7 +149,7 @@ header .button_explorer:hover {
   }
 }
 #choix_restaurants h2 {
-  margin: 0 0 3% 2%;
+  margin: 0 0 30px 20px;
 }
 #choix_restaurants .choix_restaurants_div {
   margin: 0;
@@ -246,7 +246,7 @@ footer_contact {
 
 @media screen and (min-width: 1024px) {
   .fonctionnement {
-    padding-bottom: 5%;
+    padding-bottom: 30px;
   }
   .fonctionnement .fonctionnement_fonction {
     display: flex;
@@ -294,9 +294,15 @@ footer_contact {
   box-shadow: none;
   padding: 0;
 }
-.header_class i {
-  color: black;
-  font-size: 20px;
+@media screen and (min-width: 768px) {
+  .header_class .header_class {
+    display: flex;
+    align-items: center;
+    padding: 21px 0 30px 25px;
+  }
+  .header_class .header_class .header_h1 {
+    margin-left: 40%;
+  }
 }
 
 h1 {
@@ -352,6 +358,13 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .entrees_plats_desserts .entrees_plats_desserts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .entrees_plats_desserts h2 {
   font-size: 20px;
@@ -419,10 +432,10 @@ footer {
   background-color: #404040;
   padding: 2px;
   color: white;
-  padding: 20px 0 40px 20px;
+  padding: 20px 30px 40px 20px;
 }
 footer h2 {
-  width: 100%;
+  width: 70%;
   border-bottom: none;
   font-family: shrikhand, cursive;
   margin: 0 0 20px 0;
@@ -461,15 +474,6 @@ footer .footer_div_icone {
 }
 
 @media screen and (min-width: 768px) {
-  .header_class {
-    display: flex;
-    align-items: center;
-    padding: 21px 0 30px 25px;
-  }
-  .header_class .header_h1 {
-    margin-left: 40%;
-  }
-
   .menu_carte {
     margin: 0;
   }
@@ -496,12 +500,6 @@ footer .footer_div_icone {
   }
 }
 @media screen and (min-width: 1024px) {
-  .entrees_plats_desserts {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
   .entrees_plats_desserts_carte {
     margin: 0 2px 0 2px;
     width: 30%;
