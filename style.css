@@ -140,7 +140,7 @@ header .button_explorer:hover {
     justify-content: center;
   }
   #choix_restaurants .choix_restaurants_idees .choix_restaurants_photo {
-    width: 470px;
+    width: 350px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -293,24 +293,20 @@ footer_contact {
   margin-left: 25%;
   box-shadow: none;
   padding: 0;
+  font-family: shrikhand, cursive;
+  font-size: 28px;
 }
+
 @media screen and (min-width: 768px) {
-  .header_class .header_class {
+  .header_class {
     display: flex;
     align-items: center;
     padding: 21px 0 30px 25px;
   }
-  .header_class .header_class .header_h1 {
+  .header_class .header_h1 {
     margin-left: 40%;
   }
 }
-
-h1 {
-  font-family: shrikhand, cursive;
-  font-size: 28px;
-  margin: 0;
-}
-
 h3 {
   width: 100%;
 }
@@ -359,14 +355,15 @@ h3 {
   flex-direction: column;
   align-items: center;
 }
+
 @media screen and (min-width: 1024px) {
-  .entrees_plats_desserts .entrees_plats_desserts {
+  .entrees_plats_desserts {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 }
-.entrees_plats_desserts h2 {
+h2 {
   font-size: 20px;
   border-bottom: 4px solid #99e2d0;
   width: 45px;
@@ -432,7 +429,7 @@ footer {
   background-color: #404040;
   padding: 2px;
   color: white;
-  padding: 20px 30px 40px 20px;
+  padding: 20px 30 40px 20px;
 }
 footer h2 {
   width: 70%;
