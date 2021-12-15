@@ -210,7 +210,7 @@ header .button_explorer:hover {
 
 footer {
   background-color: #404040;
-  padding: 10px 0 10px 20px;
+  padding: 20px;
   color: white;
   font-size: 16px;
 }
@@ -317,12 +317,16 @@ h3 {
   object-fit: cover;
 }
 
+main {
+  background-color: #f2f2f2;
+}
+
 .menu {
   border-radius: 50px 50px 0 0;
   background-color: #f2f2f2;
   padding: 5px 0 5px 0;
   position: relative;
-  bottom: 100px;
+  bottom: 115px;
 }
 .menu .menu_carte {
   margin-bottom: 5%;
@@ -429,7 +433,7 @@ footer {
   background-color: #404040;
   padding: 2px;
   color: white;
-  padding: 20px 30 40px 20px;
+  padding: 20px;
 }
 footer h2 {
   width: 70%;
@@ -440,7 +444,11 @@ footer h2 {
 }
 footer .footer_div {
   display: flex;
-  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  footer .footer_div {
+    align-items: center;
+  }
 }
 footer a {
   text-decoration: none;
@@ -448,6 +456,16 @@ footer a {
 }
 footer .footer_paragraphe {
   margin: 0 0 5px 10px;
+}
+@media screen and (min-width: 768px) {
+  footer .footer_paragraphe {
+    width: 115px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer .footer_paragraphe {
+    width: 100%;
+  }
 }
 footer .footer_icone--couvert {
   font-size: 12px;
