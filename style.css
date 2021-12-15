@@ -509,6 +509,13 @@ footer .footer_div_icone {
   footer h2 {
     margin: 25px;
   }
+}
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  footer h2 {
+    margin: 25px auto;
+  }
+}
+@media screen and (min-width: 768px) {
   footer .footer_pied {
     width: 95%;
     display: flex;
