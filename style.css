@@ -321,52 +321,61 @@ main {
   background-color: #f2f2f2;
 }
 
-.menu {
+.card {
   border-radius: 50px 50px 0 0;
   background-color: #f2f2f2;
   padding: 5px 0 5px 0;
   position: relative;
   bottom: 115px;
 }
-.menu .menu_carte {
+.card .card_menu {
   margin-bottom: 5%;
 }
-.menu .menu_class_carte {
+@media screen and (min-width: 768px) {
+  .card .card_menu .card_menu {
+    margin: 0;
+  }
+}
+.card .card_menu--wrapper {
   position: relative;
   margin: 30px 20px 0 20px;
 }
-.menu i {
+.card i {
   font-size: 25px;
   margin-left: 50px;
   position: absolute;
   right: 25px;
   top: 10px;
 }
-.menu .fas {
+.card .fas {
   background-image: linear-gradient(to top right, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
 }
-.menu .fas:hover {
+.card .fas:hover {
   color: opacity 1;
 }
 
 /*-----------------------------MENUS--------------------------------*/
-.entrees_plats_desserts {
+.card_menu--plats {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
-  .entrees_plats_desserts {
-    display: flex;
+  .card_menu--plats {
     flex-direction: row;
-    justify-content: center;
   }
 }
+.card_menu--h2 {
+  width: 30%;
+  margin: 0 12px 0 12px;
+}
+
 h2 {
   font-size: 20px;
   border-bottom: 4px solid #99e2d0;
@@ -375,7 +384,7 @@ h2 {
   margin: 45px 0 5px 25px;
 }
 
-.entrees_plats_desserts_titre {
+.card_menu--titre {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -383,25 +392,23 @@ h2 {
   width: 100%;
   height: 100%;
 }
-.entrees_plats_desserts_titre .entrees_plats_desserts_paragraphe {
+.card_menu--titre .card_menu--paragraphe {
   margin: 3px 0 5px 5px;
   width: 100%;
   font-weight: 300;
 }
 
-.entrees_plats_desserts_prix {
+.card_menu--prix {
   height: 100%;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
-.entrees_plats_desserts_carte {
-  width: 100%;
-}
-.entrees_plats_desserts_carte .entrees_plats_desserts_div_carte {
+.card_menu--texte {
   box-shadow: 5px 5px 5px #b3b3b3;
-  height: 80px;
+  height: 95px;
   border-radius: 20px;
   margin: 20px;
   background-color: white;
@@ -410,8 +417,10 @@ h2 {
   align-items: flex-end;
   padding: 0 10px;
 }
-.entrees_plats_desserts_carte .entrees_plats_desserts_div_carte .entrees_plats_desserts_prix {
-  font-weight: 600;
+@media screen and (min-width: 768px) {
+  .card_menu--texte {
+    width: 100%;
+  }
 }
 
 button {
@@ -489,18 +498,14 @@ footer .footer_div_icone {
 }
 
 @media screen and (min-width: 768px) {
-  .menu_carte {
+  .card_menu {
     margin: 0;
   }
-  .menu_carte i {
+  .card_menu i {
     font-size: 25px;
     margin-left: 50px;
     position: absolute;
     right: 80px;
-  }
-
-  .entrees_plats_desserts_carte {
-    width: 80%;
   }
 
   footer {
@@ -522,23 +527,7 @@ footer .footer_div_icone {
   }
 }
 @media screen and (min-width: 1024px) {
-  .entrees_plats_desserts_carte {
-    margin: 0 2px 0 2px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .entrees_plats_desserts_titre {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .entrees_plats_desserts_h3 {
+  .card_menu--h3 {
     margin: 2px 0 0 0;
   }
 
