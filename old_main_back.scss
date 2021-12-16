@@ -88,9 +88,6 @@ header{
 
 /*---------------FONCTIONNEMENT-MOBILE-----------------------------------------------*/
 
-main{
-    background-color: #f2f2f2;
-}
 .fonctionnement{
     margin: 2%;
     padding-bottom: 10%;
@@ -151,7 +148,7 @@ main{
 
 /*--------------------------------RESTAURANT-MOBILE-----------------------------------*/
 #choix_restaurants{
-    padding-top: 5%;
+    padding-top: 60px;
     background-color: #f2f2f2;
     padding-bottom: 10%;
     
@@ -163,7 +160,7 @@ main{
             justify-content: center;
         
             .choix_restaurants_photo{
-            width: 470px;
+            width: 350px;
             }
         }
     }
@@ -176,7 +173,7 @@ main{
     }
 
     h2{
-        margin: 0 0 3% 2%;
+        margin: 0 0 30px 20px;
     }
 
     .choix_restaurants_div{
@@ -190,7 +187,7 @@ main{
         margin: 0 10px 25px 10px;
         position: relative;
     }
-
+    
    a{
         text-decoration: none;
         color: inherit;
@@ -249,7 +246,7 @@ main{
 footer{
 
     background-color: #404040;
-    padding: 10px 0 10px 20px;
+    padding: 20px;
     color: white;
     font-size: 16px;
 
@@ -297,7 +294,7 @@ footer{
 
 
 .fonctionnement{
-    padding-bottom: 5%;
+    padding-bottom: 30px;
     
     .fonctionnement_fonction{
         display: flex;
@@ -345,51 +342,69 @@ footer{
 .header_class{
     display: flex;
     align-items: center;
-    margin: 0 0 10px 8px;
+    margin: 0 0 5px 8px;
+    padding: 20px 0 0 20px;
 
     .header_h1{
-        margin-left: 280px;
+        margin-left: 25%;
         box-shadow: none;
         padding: 0;
-    }
-
-    i{
-        color: black;
-        font-size: 20px;
+        font-family: shrikhand, cursive;
+        font-size: 28px;
     }
 }
 
-h1{
-    font-family: shrikhand, cursive;
-    font-size: 28px;
-    margin: 0;
+
+
+@media screen and (min-width: 768px) {
+
+    .header_class{
+        display: flex;
+        align-items: center;
+        padding: 21px 0 30px 25px;
+
+        .header_h1{
+            margin-left: 40%;
+        }
+    }
 }
-h3{
+
+h4{
     width: 100%;
 }
+
 .header_img_restaurant{
     height: 400px;
     width: 100%;
     object-fit: cover;
 }
 
+main{ 
+    background-color: #f2f2f2;
+}
 
-.menu{
+.card{
     border-radius: 50px 50px 0 0;
     background-color: #f2f2f2;
     padding: 5px 0 5px 0;
     position: relative;
-    bottom: 50px;
+    bottom: 115px;
 
-    .menu_carte{
+    .card_menu{
         margin-bottom: 5%;
+
+        @media screen and (min-width: 768px) {
+            .card_menu{
+                margin: 0;
+            }
+        }
     }
 
-    .menu_class_carte{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+
+
+    .card_menu--wrapper{
         position: relative;
+        margin: 30px 20px 0 20px; 
     }
 
     i{
@@ -415,21 +430,36 @@ h3{
 }
 /*-----------------------------MENUS--------------------------------*/
 
-.entrees_plats_desserts{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- 
-    h2{
-        font-size: 20px;
-        border-bottom: 4px solid #99e2d0;
-        width: 45px;
-        font-weight: 300;
-        margin: 45px 0 5px 5px;
+.card_menu--plats{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+}
+
+@media screen and ( min-width: 1024px) {
+    .card_menu--plats{
+        flex-direction: row;
+       
+    
     }
 }
 
-.entrees_plats_desserts_titre{
+.card_menu--h3{
+    width: 30%;
+    margin: 0 12px 0 12px;
+}
+
+h3{
+    font-size: 20px;
+    border-bottom: 4px solid #99e2d0;
+    width: 45px;
+    font-weight: 300;
+    margin: 45px 0 5px 25px;            
+}
+
+
+.card_menu--titre{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,40 +467,36 @@ h3{
     width: 100%;
     height: 100%;
 
-    .entrees_plats_desserts_paragraphe{
+    .card_menu--paragraphe{
         margin: 3px 0 5px 5px;
         width: 100%;
         font-weight: 300;
     }
 }
-   .entrees_plats_desserts_prix{
+   .card_menu--prix{
         height:100%;
         display: flex;
         align-items: flex-end;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
+        font-weight: 600;
     }
 
-
-.entrees_plats_desserts_carte{
-    width: 100%;
-
-    .entrees_plats_desserts_div_carte{
+    .card_menu--texte{
         box-shadow: 5px 5px 5px  #b3b3b3;
-        height: 80px;
-        width: 90%;
+        height: 95px;
         border-radius: 20px;
-        margin: 5px 3px 20px 3px;
+        margin: 20px;
         background-color: white;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         padding:0 10px;
 
-        .entrees_plats_desserts_prix{
-            font-weight: 600;
+        @media screen and (min-width: 768px) {
+            width: 100%;
         }
     }
-}
+
 
 button{
     border-radius: 30px;
@@ -489,21 +515,25 @@ button{
 /*-----------------FOOTER--------------------------------*/
 
 footer{
-    font-size: 14px;
     background-color: #404040;
     padding: 2px;
     color: white;
-
+    padding: 20px;
 
     h2{
-        width: 100%;
+        width: 70%;
         border-bottom: none;
         font-family: shrikhand, cursive;
+        margin: 0 0 20px 0;
+        font-size: 18px;
     }
 
     .footer_div{
         display: flex;
-        align-items: center;
+        @media screen and (min-width: 768px) {
+            align-items: center;
+            
+        }
     }
 
     a{
@@ -513,10 +543,23 @@ footer{
 
     .footer_paragraphe{
         margin: 0 0 5px 10px;
+        @media screen and (min-width: 768px) {
+            width: 115px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 100%
+        }
     }
 
-    .footer_icone{
-        font-size: 14px;
+    .footer_icone--couvert{
+        font-size: 12px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .footer_icone--partenaire{
+        font-size: 12px;
         width: 15px;
         height: 15px;
     }
@@ -536,25 +579,8 @@ footer{
 
 
 @media screen and (min-width: 768px) {
-
-    .header_class{
-        display: flex;
-        align-items: center;
-        padding: 21px 0 30px 25px;
-
-        h1{
-            margin-left: 40px;
-        }
-    }
-
-    .menu_carte{
+    .card_menu{
         margin: 0;
-    }
-
-    .menu_class_carte{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
 
         i{
             font-size: 25px;
@@ -563,21 +589,20 @@ footer{
             right: 80px;
         }
     }
-
-    .entrees_plats_desserts_carte{
-        width: 80%;
-    }
-
+    
     footer{
         display: flex;
 
         h2{
-            margin: 25px;
-        
+            margin: 25px;      
+       
+            @media screen and (min-width: 1024px) {
+                margin: 25px auto;
+            }
         }
 
         .footer_pied{
-            width: 800px;
+            width: 95%;
             display: flex;
         }
     }
@@ -586,29 +611,7 @@ footer{
 
 @media screen and ( min-width: 1024px) {
 
-    .entrees_plats_desserts{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .entrees_plats_desserts_carte{
-        margin: 0 2px 0 2px;
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .entrees_plats_desserts_titre{
-        height: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .entrees_plats_desserts_h3{
+    .card_menu--h4{
         margin: 2px 0 0 0;
     }
 
@@ -630,7 +633,3 @@ footer{
         }
     }
 }
-
-
-
-
