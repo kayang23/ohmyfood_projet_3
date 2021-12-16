@@ -1,14 +1,14 @@
-.footer_pied{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 footer{
 
     background-color: #404040;
     padding: 5%;
     color: white;
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     .footer_titre{
         font-family: shrikhand, cursive;
