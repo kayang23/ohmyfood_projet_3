@@ -295,7 +295,7 @@ main {
 .fonctionnement_container {
   display: flex;
   align-items: center;
-  padding-left: 6%;
+  padding-left: 20px;
   height: 75px;
   width: 80%;
   background-color: #f2f2f2;
@@ -307,7 +307,7 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement_container {
-    margin: 2%;
+    margin: 10px;
     padding: 0;
   }
 }
@@ -344,6 +344,11 @@ main {
   justify-content: center;
   align-items: center;
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement_icone i {
+    padding: 10px 5px 10px 10px;
+  }
+}
 .fonctionnement .fas:hover {
   color: #9356dc;
 }
@@ -352,11 +357,6 @@ main {
   font-size: 16px;
 }
 
-@media screen and (min-width: 1024px) {
-  .fonctionnement_icone {
-    padding: 10% 5% 10% 10%;
-  }
-}
 * {
   margin: 0;
   padding: 0;
