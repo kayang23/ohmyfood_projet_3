@@ -32,9 +32,11 @@ header a {
   text-decoration: none;
 }
 header .reservez {
+  padding: 30px 0 0 0;
+}
+header .reservez h2 {
   width: 80%;
   margin: auto;
-  padding: 30px 0 0 0;
 }
 header .reservez p {
   font-size: 18px;
@@ -81,6 +83,11 @@ footer .footer_title {
   font-family: shrikhand, cursive;
   font-size: 18px;
   margin: 0 0 20px 0;
+}
+@media screen and (min-width: 1024px) {
+  footer .footer_title {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   footer .footer_container {
@@ -355,11 +362,22 @@ main {
   margin: 0;
 }
 #choix_restaurants .choix_restaurants--photo {
+  width: 90%;
   border-radius: 20px;
   box-shadow: 0 5px 15px #bfbfbf;
   background-color: white;
-  margin: 0 20px 30px 20px;
+  margin: 10px auto;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  #choix_restaurants .choix_restaurants--photo {
+    width: 340px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #choix_restaurants .choix_restaurants--photo {
+    width: 470px;
+  }
 }
 #choix_restaurants a {
   text-decoration: none;
@@ -408,12 +426,12 @@ main {
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
-  #choix_restaurants .choix_restaurants_idees {
+  #choix_restaurants .choix_restaurants--ideas {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  #choix_restaurants .choix_restaurants_idees .choix_restaurants_photo {
+  #choix_restaurants .choix_restaurants--ideas .choix_restaurants_photo {
     width: 330px;
   }
 }
