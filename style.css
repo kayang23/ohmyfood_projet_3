@@ -254,8 +254,19 @@ main {
   padding-bottom: 10%;
   background-color: white;
 }
+@media screen and (min-width: 1024px) {
+  .fonctionnement {
+    padding-bottom: 5%;
+  }
+}
 .fonctionnement_title {
   margin: 50px 0 25px 25px;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement_wrapper {
+    display: flex;
+    width: 100%;
+  }
 }
 .fonctionnement_container {
   display: flex;
@@ -269,6 +280,12 @@ main {
   box-shadow: 0 5px 15px #bfbfbf;
   position: relative;
   cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement_container {
+    margin: 2%;
+    padding: 0;
+  }
 }
 .fonctionnement_container:hover {
   background-color: #f1eafb;
@@ -286,6 +303,13 @@ main {
   color: white;
   position: absolute;
   left: -15px;
+}
+@media screen and (min-width: 1024px) {
+  .fonctionnement_number {
+    position: absolute;
+    left: 45%;
+    bottom: 85%;
+  }
 }
 .fonctionnement_icone i {
   font-size: 18px;
@@ -305,27 +329,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-  #choix_restaurants h2 {
-    text-align: center;
-  }
-
-  .fonctionnement {
-    padding-bottom: 5%;
-  }
-  .fonctionnement .fonctionnement_fonction {
-    display: flex;
-    width: 100%;
-  }
-  .fonctionnement .fonctionnement_fonction .fonctionnement_div {
-    margin: 2%;
-    padding: 0;
-  }
-  .fonctionnement .fonctionnement_fonction .fonctionnement_div p {
-    position: absolute;
-    left: 45%;
-    bottom: 50%;
-  }
-  .fonctionnement .fonctionnement_fonction .fonctionnement_div .fonctionnement_icone {
+  .fonctionnement_icone {
     padding: 10% 5% 10% 10%;
   }
 }
@@ -341,6 +345,11 @@ main {
 }
 #choix_restaurants h2 {
   margin: 20px 0 20px 22px;
+}
+@media screen and (min-width: 1024px) {
+  #choix_restaurants h2 {
+    text-align: center;
+  }
 }
 #choix_restaurants .choix_restaurants--container {
   margin: 0;
