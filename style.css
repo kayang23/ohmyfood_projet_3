@@ -226,8 +226,6 @@ main {
   margin: 45px 0 5px 5px;
 }
 .card_menu--name {
-  position: absolute;
-  bottom: 40px;
   margin: 0;
 }
 @media screen and (min-width: 1024px) {
@@ -236,17 +234,13 @@ main {
   }
 }
 .card_menu--description {
-  margin: 5px 0;
   width: 100%;
   font-weight: 300;
-  position: absolute;
-  bottom: 11px;
+  padding-top: 20px;
 }
 .card_menu--price {
   font-weight: 600;
-  position: absolute;
-  right: 10px;
-  top: 40px;
+  padding-right: 10px;
 }
 .card_menu--text {
   box-shadow: 5px 5px 5px #b3b3b3;
@@ -254,11 +248,30 @@ main {
   border-radius: 20px;
   margin: 20px 0;
   background-color: white;
+  position: relative;
+}
+.card_menu--text .card_menu--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px 10px;
+}
+.card_menu--text .card_menu--bloc {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0 10px;
-  position: relative;
+  width: 100%;
+  transition: width 2s;
+}
+.card_menu--text:hover > .card_menu--bloc {
+  width: calc(100% - 75px);
+}
+.card_menu--text:hover > .card_menu--iconecheck {
+  opacity: 1;
+  width: 75px;
+}
+.card_menu--text:hover > .card_menu--iconecheck > .fa-check-circle {
+  transform: rotate(360deg);
 }
 .card_menu--text .card_menu--iconecheck {
   width: 5px;
@@ -270,25 +283,18 @@ main {
   opacity: 0;
   transition: width 2s;
 }
-.card_menu--text .card_menu--iconecheck:hover {
-  opacity: 1;
-  width: 75px;
-}
-.card_menu--text .far {
+.card_menu--text .fa-check-circle {
   font-size: 24px;
   width: 100%;
   height: 100%;
-  color: #99e2d0;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: transform 2s;
 }
-.card_menu--text .far:hover {
-  transform: rotate(360deg);
-}
-.card .card_menu--meals:nth-child(1) {
-  transition: 0.5s;
+.card .card_menu--meals:nth-child(1n) {
+  animation-delay: 3s;
   animation: slide 2s;
 }
 @keyframes slide {
