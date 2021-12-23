@@ -227,6 +227,7 @@ main {
 }
 .card_menu--name {
   margin: 0;
+  padding-top: 14px;
 }
 @media screen and (min-width: 1024px) {
   .card_menu--name {
@@ -236,7 +237,6 @@ main {
 .card_menu--description {
   width: 100%;
   font-weight: 300;
-  padding-top: 20px;
 }
 .card_menu--price {
   font-weight: 600;
