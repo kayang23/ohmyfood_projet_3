@@ -2,25 +2,45 @@
     margin: 0;
     padding: 0;
 }
+
 #choix_restaurants{
     padding-top: 5%;
     background-color: #f2f2f2;
     padding-bottom: 10%;
 
     h2{
-        margin: 20px 0 20px 22px;
+        margin: 20px 0 20px 5%;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 10%;
+    }
+
+        @media screen and (min-width: 1024px) {
+            margin-left: 45%; 
+        }
+
     }
 
     .choix_restaurants--container{
-        margin: 0;
+        
     }
 
     .choix_restaurants--photo{
+        width: 90%;
         border-radius: 20px;
         box-shadow: 0 5px 15px #bfbfbf;
         background-color: white;
-        margin: 0 20px 30px 20px;
+        margin: 10px auto;
         position: relative;
+        @media screen and (min-width: 768px) {
+            width: 340px;
+            margin: 15px 20px auto;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 470px;
+            margin: 30px 20px auto;
+        }
     }
 
    a{
@@ -30,7 +50,7 @@
 
     .choix_restaurants--image{
         width: 100%;
-        height: 200px;
+        height: 150px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
     }
@@ -69,7 +89,7 @@
         -webkit-background-clip: text;
         color: transparent;
         opacity: 0;
-        transition: linear 0.5s ease-in-out;
+        transition: opacity 1.5s;
    
 
         &:hover {
@@ -79,7 +99,7 @@
 
     @media screen and (min-width: 768px){
     
-        .choix_restaurants_idees{
+        .choix_restaurants--ideas{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;

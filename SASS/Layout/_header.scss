@@ -36,16 +36,22 @@ header{
     }
     
     .reservez{
-        width: 80%;
-        margin: auto;
         padding: 30px 0 0 0;
+
+        h2{
+            width: 80%;
+            margin: auto;
+        }
 
         p{
             font-size: 18px;
             font-weight: 300;
+            margin-top: 20px;
         }
+
     }
    
+
 }
 /*-------------------------------------------------------------------------------------*/ 
 /*                                              pages-1-2-3-4                          */

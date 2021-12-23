@@ -2,6 +2,7 @@
     border-radius: 30px;
     color: white;
     background: linear-gradient(170deg, #ff79da, #9356dc);
+    box-shadow: 0 4px 4px lightgray;
     border: none;
     width: 200px;
     font-size: 16px;
@@ -9,9 +10,10 @@
     margin:  35px auto;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 
     &:hover{
-        border: 5px solid #9356dc;
-        transition: 0.1s ease-in-out;
+        opacity: 0.9;
+        box-shadow: 0 4px 4px grey;
     }
 }
