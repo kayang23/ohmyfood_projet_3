@@ -158,21 +158,6 @@ main {
   padding: 5px 0 5px 0;
   position: relative;
   bottom: 115px;
-  /*.card_menu--category{
-      transition: .5s;
-      animation: slide 8s;
-
-  }*/
-  /*@keyframes slide{
-      from{
-          transform: translateY(300px);
-          opacity: 0;
-      }
-      to {
-          transform: translateY(0px);
-          opacity: 1;
-      }
-  }*/
 }
 .card_menu {
   margin-bottom: 5%;
@@ -203,9 +188,10 @@ main {
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
+  transition: opacity 1.5s;
 }
 .card_menu--wrapper .fas:hover {
-  color: opacity 1;
+  opacity: 1;
 }
 .card_menu--meals {
   display: flex;
@@ -275,25 +261,45 @@ main {
   position: relative;
 }
 .card_menu--text .card_menu--iconecheck {
-  width: 75px;
+  width: 5px;
   height: 75px;
+  background-color: #99e2d0;
   border-radius: 0 20px 20px 0;
-  color: transparent;
-  opacity: 1;
   position: absolute;
   right: 0;
+  opacity: 0;
+  transition: width 2s;
+}
+.card_menu--text .card_menu--iconecheck:hover {
+  opacity: 1;
+  width: 75px;
 }
 .card_menu--text .far {
-  font-size: 20px;
+  font-size: 24px;
   width: 100%;
   height: 100%;
   color: #99e2d0;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 2s;
 }
 .card_menu--text .far:hover {
-  opacity: 1;
+  transform: rotate(360deg);
+}
+.card .card_menu--meals:nth-child(1) {
+  transition: 0.5s;
+  animation: slide 2s;
+}
+@keyframes slide {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .fonctionnement {
