@@ -161,11 +161,6 @@ main {
 }
 .card_menu {
   margin-bottom: 5%;
-  /*
-  text-overflow : ellipsis;
-  white-space : nowrap;
-  overflow : hidden;
-  */
 }
 .card_menu--wrapper {
   position: relative;
