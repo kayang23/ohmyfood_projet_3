@@ -22,7 +22,7 @@
     }
 
     .choix_restaurants--container{
-        
+       
     }
 
     .choix_restaurants--photo{
@@ -41,6 +41,11 @@
             width: 470px;
             margin: 30px 20px auto;
         }
+
+        &:hover{
+            transform: scale(1.03);
+            box-shadow: 15px 15px 15px lightgray;
+         }
     }
 
    a{
