@@ -23,6 +23,7 @@
 
     .choix_restaurants--container{
        
+        
     }
 
     .choix_restaurants--photo{
@@ -30,7 +31,7 @@
         border-radius: 20px;
         box-shadow: 0 5px 15px #bfbfbf;
         background-color: white;
-        margin: 10px auto;
+        margin: 30px 40px auto;
         position: relative;
         @media screen and (min-width: 768px) {
             width: 340px;
@@ -39,11 +40,16 @@
 
         @media screen and (min-width: 1024px) {
             width: 470px;
-            margin: 30px 20px auto;
+            margin: 60px 20px auto;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 560px;
+            margin: 60px 40px auto;
         }
 
         &:hover{
-            transform: scale(1.03);
+            transform: scale(1.06);
             box-shadow: 15px 15px 15px lightgray;
          }
     }
@@ -55,9 +61,17 @@
 
     .choix_restaurants--image{
         width: 100%;
-        height: 150px;
+        height: 185px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
+
+        @media screen and (min-width: 1024px) {
+            height: 180px;
+        }
+
+        @media screen and (min-width: 1200px){
+           height: 200px; 
+        }
     }
 
     .choix_restaurants--paragraphe{
