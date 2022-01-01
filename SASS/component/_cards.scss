@@ -59,26 +59,47 @@
         @media screen and (min-width: 768px) {
             margin: 0;
         }
-
+/*
+text-overflow : ellipsis;
+white-space : nowrap;
+overflow : hidden;
+*/
         &--category{
             width: 90%;
             margin: 0 12px 0 12px;
+            opacity: 0;
             @media screen and (min-width: 768px) {
                 width: 80%;
             }
-
-            &--title{
-                font-size: 20px;
-                border-bottom: 4px solid #99e2d0;
-                width: 45px;
-                font-weight: 300;
-                margin: 45px 0 5px 5px;            
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay : (($i - 1)*1)+s;
+                    animation-duration : 2s;
+                    animation-name : slide;
+                    animation-fill-mode : forwards;
+                }
             }
+
+        &--title{
+            font-size: 20px;
+            border-bottom: 4px solid #99e2d0;
+            width: 45px;
+            font-weight: 300;
+            margin: 45px 0 5px 5px;            
+            }
+        }
+
+        &--content{
+            text-overflow : ellipsis;
+            overflow : hidden;
         }
 
         &--name{
       		margin: 0;
             padding-top: 14px;
+            text-overflow : ellipsis;
+            white-space : nowrap;
+            overflow : hidden;
             
             @media screen and ( min-width: 1024px) {
                 margin: 2px 0 0 0;
@@ -88,6 +109,9 @@
         &--description{
             width: 100%;
             font-weight: 300;
+            text-overflow : ellipsis;
+            white-space : nowrap;
+            overflow : hidden;
         }
         
         &--price{
@@ -103,11 +127,14 @@
             background-color: white;
             position: relative;
 
+
 			.card_menu--content {
+              
 				display : flex;
 				flex-direction: column;
 				justify-content: space-between;
 				margin : 5px 10px;
+        
 			}
             .card_menu--bloc{
                 display: flex;
@@ -116,6 +143,8 @@
                 width: 100%;
 				transition : width 2s;
             }
+
+         
 
 			&:hover >.card_menu--bloc {
                 width: calc(100% - 75px);
@@ -157,12 +186,6 @@
     }
 
 
-    .card_menu--meals:nth-child(1n){
-		animation-delay : 3s;
-        animation: slide 2s;
-	}
-
-    
     @keyframes slide{
         from{
             transform: translateY(50px);
@@ -173,4 +196,5 @@
             opacity: 1;
         }
     }
+    
 }

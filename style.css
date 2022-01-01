@@ -161,6 +161,11 @@ main {
 }
 .card_menu {
   margin-bottom: 5%;
+  /*
+  text-overflow : ellipsis;
+  white-space : nowrap;
+  overflow : hidden;
+  */
 }
 .card_menu--wrapper {
   position: relative;
@@ -212,11 +217,30 @@ main {
 .card_menu--category {
   width: 90%;
   margin: 0 12px 0 12px;
+  opacity: 0;
 }
 @media screen and (min-width: 768px) {
   .card_menu--category {
     width: 80%;
   }
+}
+.card_menu--category:nth-child(1) {
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-name: slide;
+  animation-fill-mode: forwards;
+}
+.card_menu--category:nth-child(2) {
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-name: slide;
+  animation-fill-mode: forwards;
+}
+.card_menu--category:nth-child(3) {
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-name: slide;
+  animation-fill-mode: forwards;
 }
 .card_menu--category--title {
   font-size: 20px;
@@ -225,9 +249,16 @@ main {
   font-weight: 300;
   margin: 45px 0 5px 5px;
 }
+.card_menu--content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .card_menu--name {
   margin: 0;
   padding-top: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 @media screen and (min-width: 1024px) {
   .card_menu--name {
@@ -237,6 +268,9 @@ main {
 .card_menu--description {
   width: 100%;
   font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .card_menu--price {
   font-weight: 600;
@@ -293,10 +327,6 @@ main {
   align-items: center;
   transition: transform 2s;
 }
-.card .card_menu--meals:nth-child(1n) {
-  animation-delay: 3s;
-  animation: slide 2s;
-}
 @keyframes slide {
   from {
     transform: translateY(50px);
@@ -308,6 +338,56 @@ main {
   }
 }
 
+.loader {
+  opacity: 1;
+  z-index: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade_out 3s forwards;
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+.loader_objet {
+  border: 16px solid #99e2d0;
+  border-top: 16px solid #9356dc;
+  border-bottom: 16px solid #ff79da;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .fonctionnement {
   padding-bottom: 10%;
   background-color: white;
