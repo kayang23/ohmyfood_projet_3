@@ -434,6 +434,9 @@ main {
   position: relative;
   cursor: pointer;
 }
+.fonctionnement_container:hover {
+  transform: scale(1.03);
+}
 @media screen and (min-width: 1024px) {
   .fonctionnement_container {
     margin: 10px;
@@ -506,6 +509,13 @@ main {
 @media screen and (min-width: 1024px) {
   #choix_restaurants h2 {
     margin-left: 45%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #choix_restaurants .choix_restaurants--ideas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 #choix_restaurants .choix_restaurants--photo {
@@ -593,16 +603,6 @@ main {
 }
 #choix_restaurants .fas:active {
   opacity: 1;
-}
-@media screen and (min-width: 768px) {
-  #choix_restaurants .choix_restaurants--ideas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #choix_restaurants .choix_restaurants--ideas .choix_restaurants_photo {
-    width: 330px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
