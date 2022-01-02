@@ -76,14 +76,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &::before{
+            color: #9356dc;
+        }
+
         @media screen and (min-width: 1024px) {
             padding: 10px 5px 10px 10px;
         }
+        
     }
 
-    .fas:hover{
+    /*.fas:hover{
         color: #9356dc;
-    }
+    }*/
 
     h3{
         margin: 10px;

@@ -188,7 +188,7 @@ main {
   -webkit-background-clip: text;
   color: transparent;
   opacity: 0;
-  transition: opacity 1.5s;
+  transition: opacity 2s;
 }
 .card_menu--wrapper .fas:hover {
   opacity: 1;
@@ -365,12 +365,13 @@ main {
   }
 }
 .loader_objet {
-  border: 16px solid #99e2d0;
-  border-top: 16px solid #9356dc;
-  border-bottom: 16px solid #ff79da;
+  border-right: 20px solid #99e2d0;
+  border-left: 20px solid #f2f2f2;
+  border-top: 20px solid #9356dc;
+  border-bottom: 20px solid #ff79da;
   border-radius: 100%;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   position: relative;
   animation: spin 2s infinite linear;
 }
@@ -386,6 +387,9 @@ main {
 .fonctionnement {
   padding-bottom: 10%;
   background-color: white;
+  /*.fas:hover{
+      color: #9356dc;
+  }*/
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement {
@@ -468,13 +472,13 @@ main {
   justify-content: center;
   align-items: center;
 }
+.fonctionnement_icone i::before {
+  color: #9356dc;
+}
 @media screen and (min-width: 1024px) {
   .fonctionnement_icone i {
     padding: 10px 5px 10px 10px;
   }
-}
-.fonctionnement .fas:hover {
-  color: #9356dc;
 }
 .fonctionnement h3 {
   margin: 10px;
@@ -587,7 +591,7 @@ main {
   opacity: 0;
   transition: opacity 1.5s;
 }
-#choix_restaurants .fas:hover {
+#choix_restaurants .fas:active {
   opacity: 1;
 }
 @media screen and (min-width: 768px) {

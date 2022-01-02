@@ -21,11 +21,6 @@
 
     }
 
-    .choix_restaurants--container{
-       
-        
-    }
-
     .choix_restaurants--photo{
         width: 90%;
         border-radius: 20px;
@@ -111,7 +106,7 @@
         transition: opacity 1.5s;
    
 
-        &:hover {
+        &:active {
             opacity: 1;
         }
     }
