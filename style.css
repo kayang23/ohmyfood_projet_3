@@ -52,6 +52,9 @@ header .reservez p {
   align-items: center;
   margin: 0 0 10px 8px;
 }
+.header_arrow {
+  margin-left: 20px;
+}
 .header_title {
   margin: 16px auto;
   box-shadow: none;
@@ -150,6 +153,7 @@ main {
 .button:hover {
   opacity: 0.9;
   box-shadow: 0 4px 4px grey;
+  transform: scale(1.03);
 }
 
 .card {
@@ -199,15 +203,51 @@ main {
   align-items: center;
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .card_menu--meals {
+    margin: 0;
+  }
+}
 @media screen and (min-width: 1024px) {
   .card_menu--meals {
     flex-direction: row;
+    position: relative;
+  }
+}
+.card_menu--category_1 {
+  width: 90%;
+  margin: 0 12px 0 12px;
+  opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  .card_menu--category_1 {
+    width: 80%;
+    position: relative;
+    top: 47px;
   }
 }
 @media screen and (min-width: 768px) {
-  .card_menu {
-    margin: 0;
+  .card_menu--category_1 {
+    width: 80%;
   }
+}
+.card_menu--category_1:nth-child(1) {
+  animation-delay: 0s;
+  animation-duration: 2s;
+  animation-name: slide;
+  animation-fill-mode: forwards;
+}
+.card_menu--category_1:nth-child(2) {
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-name: slide;
+  animation-fill-mode: forwards;
+}
+.card_menu--category_1:nth-child(3) {
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-name: slide;
+  animation-fill-mode: forwards;
 }
 .card_menu--category {
   width: 90%;
@@ -278,6 +318,10 @@ main {
   margin: 20px 0;
   background-color: white;
   position: relative;
+}
+.card_menu--text:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px #bfbfbf;
 }
 .card_menu--text .card_menu--content {
   display: flex;
@@ -430,21 +474,20 @@ main {
   background-color: #f2f2f2;
   border-radius: 20px;
   margin: 30px auto;
-  box-shadow: 0 5px 15px #bfbfbf;
+  box-shadow: 0 5px 10px #bfbfbf;
   position: relative;
   cursor: pointer;
 }
 .fonctionnement_container:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
+  background-color: #f1eafb;
+  box-shadow: 0 15px 15px #bfbfbf;
 }
 @media screen and (min-width: 1024px) {
   .fonctionnement_container {
     margin: 10px;
     padding: 0;
   }
-}
-.fonctionnement_container:hover {
-  background-color: #f1eafb;
 }
 .fonctionnement_number {
   font-size: 12px;
@@ -475,7 +518,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-.fonctionnement_icone i::before {
+.fonctionnement_icone i:hover {
   color: #9356dc;
 }
 @media screen and (min-width: 1024px) {
@@ -523,7 +566,7 @@ main {
   border-radius: 20px;
   box-shadow: 0 5px 15px #bfbfbf;
   background-color: white;
-  margin: 30px 40px auto;
+  margin: 30px auto;
   position: relative;
 }
 @media screen and (min-width: 768px) {
