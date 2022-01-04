@@ -1,3 +1,4 @@
+@import "./config/variables";
 @import "./Layout/header";
 @import "./Layout/footer";
 @import "./Layout/body";
@@ -6,9 +7,11 @@
 @import "./component/cards";
 @import "./component/loader";
 
-@import "./Pages/index";
-@import "./Pages/restaurant";
+@import "./Pages/fonctionnements";
+@import "./Pages/restaurants";
 
 @import "./Typography/typography";
+
+
 
 
