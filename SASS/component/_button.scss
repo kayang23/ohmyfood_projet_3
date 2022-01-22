@@ -1,7 +1,7 @@
 .button {
     border-radius: 30px;
     color: white;
-    background: linear-gradient(170deg, #ff79da, #9356dc);
+    background: linear-gradient(170deg,$color_secondary, $color_primary);
     box-shadow: 0 4px 4px lightgray;
     border: none;
     width: 200px;

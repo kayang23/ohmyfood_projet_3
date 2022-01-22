@@ -100,7 +100,7 @@
 
             @keyframes slide{
                 from{
-                    transform: translateY(50px);
+                    transform: translateY(80px);
                     opacity: 0;
                 }
                 to {
@@ -119,21 +119,19 @@
             }
         }
 
-        &--content{
-            text-overflow : ellipsis;
-            overflow : hidden;
-        }
+       
 
         &--text{
-            box-shadow: 5px 5px 5px $color_grey;
+            box-shadow: 5px 5px 5px #b3b3b3;
             height: 75px;
             border-radius: 20px;
             margin: 20px 0;
-            background-color: $color_white;
+            background-color: white;
             position: relative;
+            overflow: hidden;
             &:hover{
                 transform: scale(1.03);
-                box-shadow: 0 5px 15px $color_grey;
+                box-shadow: 0 5px 15px #b3b3b3;
             }
 
         .card_menu--iconecheck{
@@ -157,9 +155,7 @@
             width: 100%;
             height: 100%;
             color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include center;
             transition: transform 2s, opacity 2s;
             opacity: 0;
         }
@@ -175,9 +171,9 @@
 			align-items: flex-end;
             width: 100%;
 			transition : width 2s;
-            &:hover {
-                width: calc(100% - 75px);
-            }
+        }
+        &:hover > .card_menu--bloc {
+            width: calc(100% - 75px);
         }
 
 		.card_menu--content {
@@ -185,13 +181,15 @@
 			flex-direction: column;
 			justify-content: space-between;
 			margin : 5px 10px;
+            text-overflow : ellipsis;
+            white-space : nowrap;
+            overflow : hidden;
         }
 
         .card_menu--name{
             margin: 0;
             padding-top: 14px;
             text-overflow : ellipsis;
-            white-space : nowrap;
             overflow : hidden;
           
         @media screen and ( min-width: 1024px) {
@@ -203,7 +201,6 @@
         width: 100%;
         font-weight: 300;
         text-overflow : ellipsis;
-        white-space : nowrap;
         overflow : hidden;
     }
 

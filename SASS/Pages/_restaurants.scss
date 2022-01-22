@@ -36,6 +36,7 @@
         background-color: white;
         margin: 30px auto;
         position: relative;
+        transition: transform 200ms;
         @media screen and (min-width: 768px) {
             width: 340px;
             margin: 15px 20px auto;
@@ -106,7 +107,7 @@
     }
 
     .fas{ 
-        background-image: linear-gradient(to top right, #ff79da, #9356dc);
+        background-image: linear-gradient(to top right, $color_secondary, $color_primary);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -114,7 +115,7 @@
         transition: opacity 1.5s;
    
 
-        &:active {
+        &:hover {
             opacity: 1;
         }
     }
