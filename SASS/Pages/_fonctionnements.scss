@@ -43,7 +43,7 @@
         &:hover{
             transform: scale(1.05);
             background-color:#f1eafb ;
-            box-shadow: 0 15px 15px #bfbfbf;
+            @include ombre
             }
 
         &:hover > .fonctionnement_icone > .fonctionnement_icone--image{

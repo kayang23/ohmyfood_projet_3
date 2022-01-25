@@ -476,7 +476,7 @@ main {
 .fonctionnement_container:hover {
   transform: scale(1.05);
   background-color: #f1eafb;
-  box-shadow: 0 15px 15px #bfbfbf;
+  box-shadow: 0px 5px 12px #8c8c8c;
 }
 .fonctionnement_container:hover > .fonctionnement_icone > .fonctionnement_icone--image {
   color: #9356dc;
